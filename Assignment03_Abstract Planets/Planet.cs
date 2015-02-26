@@ -22,9 +22,7 @@ namespace Assignment03_Abstract_Planets
             {
                 throw new System.NotImplementedException();
             }
-            set
-            {
-            }
+            
         }
 
         public double Mass
@@ -33,9 +31,7 @@ namespace Assignment03_Abstract_Planets
             {
                 throw new System.NotImplementedException();
             }
-            set
-            {
-            }
+           
         }
 
         public int MoonCount
@@ -55,9 +51,7 @@ namespace Assignment03_Abstract_Planets
             {
                 throw new System.NotImplementedException();
             }
-            set
-            {
-            }
+            
         }
 
         public double OrbitalPeriod
@@ -95,7 +89,7 @@ namespace Assignment03_Abstract_Planets
 
         public Planet(string Name, double Diameter, string mass)
         {
-            throw new System.NotImplementedException();
+            
         }
 
         public string ToString()
