@@ -10,7 +10,7 @@
   <Class Name="Assignment03_Abstract_Planets.GiantPlanet">
     <Position X="5" Y="0.75" Width="2.75" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAABAAAAAQAAAAABAAAAAAAAAAAAAAAAACAAAA=</HashCode>
+      <HashCode>AIAAAAAABAAAAAQAAAAABAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>GiantPlanet.cs</FileName>
     </TypeIdentifier>
   </Class>

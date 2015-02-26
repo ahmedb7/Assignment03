@@ -20,7 +20,7 @@ namespace Assignment03_Abstract_Planets
         {
             get
             {
-                throw new System.NotImplementedException();
+                return this._diameter;
             }
             
         }
@@ -29,7 +29,7 @@ namespace Assignment03_Abstract_Planets
         {
             get
             {
-                throw new System.NotImplementedException();
+                return this._mass;
             }
            
         }
@@ -38,10 +38,11 @@ namespace Assignment03_Abstract_Planets
         {
             get
             {
-                throw new System.NotImplementedException();
+                return this._moonCount;
             }
             set
             {
+                this._moonCount = value;
             }
         }
 
@@ -49,7 +50,7 @@ namespace Assignment03_Abstract_Planets
         {
             get
             {
-                throw new System.NotImplementedException();
+                return this._name;
             }
             
         }
@@ -58,10 +59,11 @@ namespace Assignment03_Abstract_Planets
         {
             get
             {
-                throw new System.NotImplementedException();
+                return this._diameter;
             }
             set
             {
+                this._orbitalPeriod = value;
             }
         }
 
@@ -69,10 +71,11 @@ namespace Assignment03_Abstract_Planets
         {
             get
             {
-                throw new System.NotImplementedException();
+                return this._ringCount;
             }
             set
             {
+                this._ringCount = value;
             }
         }
 
@@ -80,21 +83,26 @@ namespace Assignment03_Abstract_Planets
         {
             get
             {
-                throw new System.NotImplementedException();
+                return this._rotationPeriod;
             }
             set
             {
+                this._rotationPeriod = value;
             }
         }
 
         public Planet(string Name, double Diameter, string mass)
         {
-            
+            this._name = name;
+            this._mass = mass;
+            this._diameter = diameter;
         }
 
-        public string ToString()
+        public override string ToString()
         {
-            throw new System.NotImplementedException();
+            return this.Name 
+                + " has the diameter of " + this.Diameter 
+                + " kilometers and a mass of " + this.Mass + " tonnes.";
         }
     }
 }

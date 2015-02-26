@@ -9,20 +9,40 @@ namespace Assignment03_Abstract_Planets
     class GiantPlanet : Planet
     {
         private int _type;
-    
-        public void giantPlant(string name, double diameter, double mass, string type)
+
+        public GiantPlanet(string name, double diameter, double mass, string type)
+            : base( name , diameter , mass )
         {
-            throw new System.NotImplementedException();
+            this._type = type;
         }
 
         public bool HasMoons()
         {
-            throw new System.NotImplementedException();
+           bool moon;
+            
+            if (MoonCount >0)
+            {
+                moon = true;
+            }
+            else 
+            {
+                moon = false;
+            }
+            return moon;
         }
 
         public bool HasRings()
         {
-            throw new System.NotImplementedException();
+            bool rings;
+            if (RingCount > 0)
+            {
+                rings = true;
+            }
+            else
+            {
+                rings = false;
+            }
+            return rings;
         }
     }
 }
